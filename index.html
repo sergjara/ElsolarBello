@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Solar Bello — Creative Technologist / Artist</title>
+  <meta name="description"
+    content="Digital identity & portfolio of El — multidisciplinary creator working at the intersection of art, code & experience design." />
+
+  <link rel="icon" href="https://via.placeholder.com/32/000/fff?text=EL" type="image/svg+xml" />
+  <meta property="og:title" content="El Solar Bello" />
+  <meta property="og:description" content="Creative technologist • visual artist • storyteller" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/111/eee?text=El+Solar+Bello" />
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="nav-logo">EL SOLAR BELLO</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <canvas id="cursor-canvas"></canvas>
+  <button class="theme-toggle" title="Toggle theme" aria-label="Toggle dark/light mode">☀︎</button>
+
+  <div class="container">
+
+    <header>
+      <canvas id="three-canvas"></canvas>
+      <img class="hero-image" src="hero_image.png" alt="Abstract digital fusion of code, light and emotion"
+        loading="lazy">
+      <h1 id="hero-title">EL<br>SOLAR<br>BELLO</h1>
+      <p class="subtitle">Creative technologist • visual artist • multidisciplinary storyteller</p>
+      <p class="tagline">Building poetic systems between code, light and human emotion</p>
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">See Selected Work ↓</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-container">
+          <img class="section-image" src="about_image.svg" alt="Abstract digital brain – generative AI neural networks"
+            loading="lazy">
+          <div class="about-overlay">
+            <p>I create at the intersection of code, visual language, interaction design and narrative.<br><br>
+              Currently exploring: generative systems, real-time visuals, AI-augmented creativity, spatial storytelling
+              and
+              identity in digital-native environments.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Work</h2>
+        <div class="grid">
+
+          <!-- 1 -->
+          <div class="card">
+            <img src="latent_echoes.svg" alt="Latent Echoes" loading="lazy">
+            <div class="card-body">
+              <h3>Latent Echoes</h3>
+              <p>Interactive generative installation — memories reconstructed through diffusion models and real-time
+                viewer input.</p>
+              <div class="card-tags">
+                <span class="tag">Three.js</span>
+                <span class="tag">Stable Diffusion</span>
+                <span class="tag">Installation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="card">
+            <img src="neon_liturgy.svg" alt="Neon Liturgy" loading="lazy">
+            <div class="card-body">
+              <h3>Neon Liturgy</h3>
+              <p>Audio-visual live performance series merging sacred geometry, glitch art and modular synthesis.</p>
+              <div class="card-tags">
+                <span class="tag">TouchDesigner</span>
+                <span class="tag">Ableton</span>
+                <span class="tag">Live</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="card">
+            <img src="digital_reliquary.svg" alt="Digital Reliquary" loading="lazy">
+            <div class="card-body">
+              <h3>Digital Reliquary</h3>
+              <p>Web-based memorial archive — personal digital artifacts turned into explorable 3D memory spaces.</p>
+              <div class="card-tags">
+                <span class="tag">WebGL</span>
+                <span class="tag">GSAP</span>
+                <span class="tag">Poetry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 (new) -->
+          <div class="card">
+            <img src="fractal_pulse.svg" alt="Fractal Pulse" loading="lazy">
+            <div class="card-body">
+              <h3>Fractal Pulse</h3>
+              <p>Real-time fractal explorer with emotional audio-reactive color shifts and infinite zoom navigation.</p>
+              <div class="card-tags">
+                <span class="tag">Shader</span>
+                <span class="tag">GLSL</span>
+                <span class="tag">Interactive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 (new) -->
+          <div class="card">
+            <img src="luminescent_symphony.svg" alt="Luminescent Symphony" loading="lazy">
+            <div class="card-body">
+              <h3>Luminescent Symphony</h3>
+              <p>Generative light-field composition responding to ambient sound and viewer presence.</p>
+              <div class="card-tags">
+                <span class="tag">p5.js</span>
+                <span class="tag">Audio</span>
+                <span class="tag">Installation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 (new) -->
+          <div class="card">
+            <img src="echoes_of_chaos.svg" alt="Echoes of Chaos" loading="lazy">
+            <div class="card-body">
+              <h3>Echoes of Chaos</h3>
+              <p>AI-driven chaos simulation turned poetic visual narrative of small actions and vast consequences.</p>
+              <div class="card-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Processing</span>
+                <span class="tag">Narrative</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="marquee-section">
+        <div class="marquee">
+          <div class="marquee-inner">
+            <span>POETIC SYSTEMS</span>
+            <span>CREATIVE CODE</span>
+            <span>STORYTELLING</span>
+            <span>AI ETHICS</span>
+            <span>EXPERIMENTAL UI</span>
+            <span>DIGITAL ART</span>
+            <span>INTERACTIVE</span>
+            <span>POETIC SYSTEMS</span>
+            <span>CREATIVE CODE</span>
+            <span>STORYTELLING</span>
+            <span>AI ETHICS</span>
+            <span>EXPERIMENTAL UI</span>
+            <span>DIGITAL ART</span>
+            <span>INTERACTIVE</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>Get in Touch</h2>
+      <form action="mailto:hello@elsolarbello.com" method="post" enctype="text/plain" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <div class="socials">
+        <a href="https://x.com/elsolarbello" target="_blank" aria-label="X">@</a>
+        <a href="https://github.com/elsolarbello" target="_blank">GitHub</a>
+        <a href="https://instagram.com/elsolarbello" target="_blank">Instagram</a>
+        <a href="https://are.na/elsolarbello" target="_blank">Are.na</a>
+      </div>
+      <p>© 2026 El Solar Bello — All rights reserved<br>
+        <small>Made with curiosity and too much coffee</small>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

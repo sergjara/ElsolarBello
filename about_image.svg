@@ -1,0 +1,17 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradSetup" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#gradSetup)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  <circle cx="400" cy="300" r="150" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <circle cx="400" cy="300" r="100" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="50%" y="50%" font-family="monospace" font-size="24" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">INTERSECTION</text>
+  <text x="50%" y="58%" font-family="monospace" font-size="14" fill="#94a3b8" text-anchor="middle" dominant-baseline="middle">CODE / DESIGN / NARRATIVE</text>
+</svg>
